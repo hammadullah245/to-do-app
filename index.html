@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>to-do app list</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container"> 
+
+      <div id="todo-app">
+
+        <h2>to-do list</h2>
+
+        <div class="row">
+
+          <input type="text" id="todo-input" placeholder="Add a new task" />
+          <button id="enter" onclick="additem()">
+
+            <i class="fas fa-plus-circle"></i></button>
+
+        </div>
+        <div class="list-container" id="list-container">
+        <ul id="list-container">
+          <!-- <li class="checked">task 1</li>
+            <li>task 1</li>
+            <li>task 1</li> -->
+        </ul>
+      </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

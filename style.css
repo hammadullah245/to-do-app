@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  height: 90vh;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  background-image: url("./img/abstract.jpg");
+  background-image: blur(10px);
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  width: 400px;
+  height: auto;
+  min-height: 430px;
+  margin-top: 15px;
+  background: transparent;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  overflow: hidden; 
+}
+
+#todo-app {
+  width: 100%;
+  max-width: 540px;
+  padding: 30px;
+  border-radius: 10px;
+  justify-content: space-between;
+  position: relative;
+  top: 0px;
+  left: 14px;
+}
+
+#todo-app h2 {
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px;
+}
+
+input {
+  flex: 1;
+  outline: none;
+  padding: 10px 10px 10px 10px;
+  background-color: transparent;
+  border: 1px solid aliceblue;
+  border-radius: 30px;
+  color: rgb(243, 246, 248);
+  font-size: 15px;
+  height: 30px;
+}
+
+#todo-input::placeholder {
+  color: rgba(240, 248, 255, 0.705);
+}
+
+button {
+  border: none;
+  outline: none;
+  background: rgba(0, 0, 0, 0);
+  color: aliceblue;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 50px;
+  height: 30px;
+  width: 30px;
+}
+
+ul li {
+  outline: none;
+  list-style: none;
+  font-size: 15px;
+  user-select: none;
+  cursor: pointer;
+  color: aliceblue;
+  position: relative;
+  top: 10px;
+  left: 0px;
+  border: 1px solid aliceblue;
+  width: 400px;
+  height: 30px;
+  border-radius: 30px;
+  padding-left: 20px;
+  padding-top: 6px;
+}
+
+
+.list-container{
+  border: 0px solid #ded3d36a;
+  margin-top: 10px;
+  margin: 10px;
+  margin-bottom: 30px;
+  height: 303px;
+  width: 370px;
+  overflow: overlay;
+  margin-left:-30px ;
+  border-radius: 20px;
+}
+
+.list-container::-webkit-scrollbar-track {
+  background-color: rgba(39, 33, 33, 0.988);
+  border-radius: 20px;
+}
+
+.list-container::-webkit-scrollbar{
+  width: 0px;
+}
+
+.list-container:hover::-webkit-scrollbar{
+  width: 7px;
+}
+
+.list-container::-webkit-scrollbar-thumb{
+  background: rgb(248, 3, 3);
+  border-radius: 20px;
+}
+
+.item{
+  padding-left: 15px;
+  padding-top: 7px;
+  display: flex;
+  flex-direction:row;
+}
+.text{
+  width: 340px;
+}
+
+.edit{
+  height:3px;
+  width: 3px;
+  position: relative;
+  top:5px;
+  left: -70px;
+  color: green;
+}
+
+.delete{
+  height:3px;
+  width: 3px;
+  position: relative;
+  top:5px;
+  left:-30px;
+  color: rgb(189, 5, 5);
+}
+
+
+
+
+
+
+@media screen and (max-width:800px){
+  .container{
+    width: 60%;
+  }
+}
+
+@media screen and (max-width:650px){
+  .container{
+    width: 70%;
+  }
+}
+
+@media screen and (max-width:500px){
+  .container{
+    width: 95%;
+  }
+}
+
+@media screen and (max-width:350px){
+  input{
+    width: 95%;
+  }
+}
